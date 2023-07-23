@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'karla', sans-serif;
+  font-family: 'Roboto', sans-serif;
   position: relative;
 }
 
@@ -50,6 +50,7 @@ footer {
   font-weight: 200;
   font-style: italic;
   padding: 20px;
+  color: #666;
 }
 
 @media (max-width: 480px) {
