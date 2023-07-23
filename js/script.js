@@ -64,6 +64,14 @@ const saveClient = () => {
       updateTable();
       closeModal();
     }
+
+    Toastify({
+      text: "Cliente salvo com sucesso!",
+      className: "info",
+      style: {
+        background: "#34ce74",
+      }
+    }).showToast();
   }
 };
 
@@ -122,6 +130,13 @@ const editDelete = (event) => {
       if (response) {
         deleteClient(index);
         updateTable();
+        Toastify({
+          text: "Cliente excluído com sucesso!",
+          className: "info",
+          style: {
+            background: "#34ce74",
+          }
+        }).showToast();
       }
     }
   }
